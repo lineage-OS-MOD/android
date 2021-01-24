@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Github remote -->
+    <remote name="github"
+        fetch="https://github.com/" />
+
+    <remote name="origin"
+        fetch="https://github.com/lineage-OS-MOD"
+        sync-j="16" />
+
+    <!-- general -->
+    <project path="build/make" name="android_build" remote="origin" revision="lineage-17.1" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+
+    <!-- frameworks -->
+    <project path="frameworks/av" name="android_frameworks_av" remote="origin" revision="lineage-17.1" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="origin" revision="lineage-17.1" />
+
+    <!-- packages -->
+    <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="origin" revision="lineage-17.1" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="origin" revision="lineage-17.1" />
+    <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="origin" revision="lineage-17.1" />
+
+    <!-- vendor -->
+    <project path="vendor/lineage" name="android_vendor_lineage" remote="origin" revision="lineage-17.1" />
+
+    <project path="lineage-sdk" name="android_lineage-sdk" remote="origin" revision="lineage-17.1" />
+
+    <!-- External -->
+    <project path="external/asus/StitchImage" name="external_asus_StitchImage" remote="origin " />
+    <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="origin" revision="lineage-17.1" />
+
+    <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="origin" revision="lineage-17.1" />
+</manifest>
