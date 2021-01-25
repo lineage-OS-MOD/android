@@ -8,7 +8,7 @@
     <project path="vendor/lineage" name="android_vendor_lineage" remote="los" />
     <project path="lineage-sdk" name="android_lineage-sdk" remote="los" />
     <project path="external/asus/StitchImage" name="external_asus_StitchImage" remote="los" />
-    <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="los" />
+    <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="los" />
     <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="los"  />
     <project path="build/soong" name="android_build_soong" remote="los" >
         <linkfile src="root.bp" dest="Android.bp" />
