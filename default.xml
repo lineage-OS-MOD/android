@@ -13,7 +13,7 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-10.0.0_r41" />
 
-  <remote  name="origin"
+  <remote  name="los"
            fetch="https://github.com/lineage-OS-MOD"
            revision="lineage-17.1" />
 
