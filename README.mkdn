@@ -13,7 +13,7 @@ repo init -u https://github.com/lineage-OS-MOD/android.git -b lineage-17.1
 ```
 Then to sync up:
 ```
-repo sync
+repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -jx
 ```
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
